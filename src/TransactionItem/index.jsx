@@ -5,15 +5,15 @@ const formater = new Intl.NumberFormat("pt-PT", {
 });
 
 export const TransactionItem = ({ item }) => {
-  // const detailsAddClassName = item.value >= 0 ? styles.income : styles.expense;
+  const detailAddicionalClassName = item.value >= 0 ? "text-secondary-income" : "text-secondary-expense";
 
   return (
-    <div className="">
-      <div className="">
-        <p>{item.description}</p>
-        <p>{formater.format(item.value)}</p>
+    <div className="flex justify-between">
+      <div className={`flex flex-col gap-2 text-[15px] leading-[120%] font-medium ${detailAddicionalClassName}`}>
+        <p className="m-0">{item.description}</p>
+        <p className="m-0">{formater.format(item.value)}</p>
       </div>
-      <div className="">
+      <div className="text-neutral-text text-sm leading-5">
         {new Date(item.date).toLocaleDateString("pt-PT")}
       </div>
     </div>

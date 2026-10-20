@@ -33,7 +33,7 @@ export const Transactions = () => {
           </ListItem>
         ))}
       </List>
-      <div className="">
+      <div className="flex justify-center">
         <Button>
           <IconCurrency />
           Adicionar transação

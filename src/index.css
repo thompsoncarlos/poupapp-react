@@ -3,11 +3,13 @@
 
 @theme {
     /* Neutral colors */
-    --color-neutral-darker: #1C1D21;
-    --color-neutral-background: #212229;
+    --color-neutral-darker: #1E1E1E;
+    --color-neutral-background: #00163b;
     --color-neutral-surface: #2A2C34;
     --color-neutral-header: #33353F;
     --color-neutral-text: #F5F5F5;
+
+    --color-neutral-button: #001f3f;
 
     /* Primary colors */
     --color-primary-highlight: #7693FF;

@@ -12,11 +12,10 @@ import { Accounts } from "./components/Accounts";
 
 function App() {
   return (
-    <div className="bg-neutral-background min-h-screen ">
+    <div className="bg-neutral-background min-h-screen">
       <Container>
         <Aside />
         <Main>
-          <div>
             <SearchInput />
             <div>
               <Typography variant="h1">Olá, Mr.Thompson!</Typography>
@@ -24,7 +23,7 @@ function App() {
                 Aqui está uma breve descrição das suas finanças.
               </Typography>
             </div>
-            <section class="">
+            <section className="grid grid-cols-2 items-stretch gap-6">
               <Card>
                 <Card.Header>Orçamento diário disponível:</Card.Header>
                 <Card.Body>
@@ -50,7 +49,6 @@ function App() {
                 </Card.Body>
               </Card>
             </section>
-          </div>
         </Main>
       </Container>
     </div>
