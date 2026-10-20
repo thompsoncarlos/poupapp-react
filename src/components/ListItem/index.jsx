@@ -1,8 +1,6 @@
-import styles from "./listitem.module.css";
-
-export const ListItem = ({ children, className, ...props }) => {
+export const ListItem = ({ children, ...props }) => {
   return (
-    <li className={`${styles.item} ${className || ""}`} {...props}>
+    <li className="" {...props}>
       {children}
     </li>
   );

@@ -1,10 +1,8 @@
-import styles from './progressbar.module.css';
-
 export const ProgressBar = ({ percent }) => {
     return (
-        <div className={styles.wrapper}>
+        <div className="">
             <div 
-                className={styles.filled}
+                className=""
                 style={{
                     width: `${percent}%`
                 }}

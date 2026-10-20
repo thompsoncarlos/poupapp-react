@@ -1,10 +1,9 @@
 import { IconSavings } from "../icons";
 import { ProgressBar } from "../ProgressBar";
-import styles from "./savingsstatus.module.css";
 
 export const SavingsStatus = ({ percent }) => {
   return (
-    <div className={styles.container}>
+    <div className="">
       <p>
         <IconSavings /> Economizar
       </p>

@@ -1,8 +1,6 @@
-import styles from "./list.module.css";
-
-export const List = ({ children, className, ...props }) => {
+export const List = ({ children, ...props }) => {
   return (
-    <ul className={`${styles.list} ${className || ""}`} {...props}>
+    <ul className="" {...props}>
       {children}
     </ul>
   );

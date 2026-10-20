@@ -1,5 +1,3 @@
-import styles from "./typography.module.css";
-
 const TAGS = {
   h1: "h1",
   h2: "h2",
@@ -8,7 +6,7 @@ const TAGS = {
 
 export const Typography = ({ children, variant }) => {
   const Component = TAGS[variant] || "p";
-  const variantClass = styles[variant] || styles.p;
+  // const variantClass = styles[variant] || styles.p;
 
-  return <Component className={variantClass}>{children}</Component>;
+  return <Component className="">{children}</Component>;
 };

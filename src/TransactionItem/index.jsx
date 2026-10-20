@@ -1,4 +1,3 @@
-import styles from "./transactionItem.module.css";
 
 const formater = new Intl.NumberFormat("pt-PT", {
   style: "currency",
@@ -6,15 +5,15 @@ const formater = new Intl.NumberFormat("pt-PT", {
 });
 
 export const TransactionItem = ({ item }) => {
-  const detailsAddClassName = item.value >= 0 ? styles.income : styles.expense;
+  // const detailsAddClassName = item.value >= 0 ? styles.income : styles.expense;
 
   return (
-    <div className={styles.transaction}>
-      <div className={[styles.details, detailsAddClassName].join(" ")}>
+    <div className="">
+      <div className="">
         <p>{item.description}</p>
         <p>{formater.format(item.value)}</p>
       </div>
-      <div className={styles.date}>
+      <div className="">
         {new Date(item.date).toLocaleDateString("pt-PT")}
       </div>
     </div>

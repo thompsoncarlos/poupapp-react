@@ -1,11 +1,10 @@
 import { IconSearch } from "../icons";
-import styles from "./searchinput.module.css";
 
 export const SearchInput = (props) => {
   return (
-    <div className={styles.container}>
+    <div className="">
       <IconSearch />
-      <input className={styles.input} {...props} />
+      <input className="" {...props} />
     </div>
   );
 };

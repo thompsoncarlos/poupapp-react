@@ -1,6 +1,5 @@
 // src/components/Account/index.jsx
 import { IconBank } from "../icons";
-import styles from "./account.module.css";
 
 const formatter = new Intl.NumberFormat("pt-BR", {
   style: "currency",
@@ -9,14 +8,14 @@ const formatter = new Intl.NumberFormat("pt-BR", {
 
 export const Account = ({ account }) => {
   return (
-    <div className={styles.account}>
+    <div className="">
       <div>
-        <p className={styles.bank}>
+        <p className="">
           <IconBank />
           <strong>{account.bank}</strong>
         </p>
       </div>
-      <div className={styles.details}>
+      <div className="">
         <p>
           <strong>Saldo</strong>
         </p>
