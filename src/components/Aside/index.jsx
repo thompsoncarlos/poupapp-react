@@ -6,7 +6,8 @@ export const Aside = () => {
     <aside className={styles.aside}>
       <img src={logo} alt="" />
       <footer className={styles.footer}>
-        Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+        Desenvolvido por Carlos Thompson, seguindo a formação React Developer da Alura Cursos. 
+        Este projeto é fictício com fins educacionais.
       </footer>
     </aside>
   );
