@@ -1,24 +1,28 @@
-:root {
-  /* Neutral colors */
-  --neutral-darker: #1c1d21;
-  --neutral-background: #212229;
-  --neutral-surface: #2a2c34;
-  --neutral-header: #33353f;
-  --neutral-text: #f5f5f5;
-  /* Primary colors */
-  --primary-highlight: #7693ff;
-  /* Secondary colors */
-  --secondary-income: #d6ff62;
-  --secondary-expense: #f87828;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* Neutral colors */
+    --color-neutral-darker: #1E1E1E;
+    --color-neutral-background: #00163b;
+    --color-neutral-surface: #2A2C34;
+    --color-neutral-header: #33353F;
+    --color-neutral-text: #F5F5F5;
+
+    --color-neutral-button: #001f3f;
+
+    /* Primary colors */
+    --color-primary-highlight: #7693FF;
+
+    /* Secondary colors */
+    --color-secondary-income: #06FF62;
+    --color-secondary-expense: #F8782B;
+
+    --font-work-sans: "Work Sans", sans-serif;
 }
 
-* {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  background-color: var(--neutral-background);
+@layer base {
+    html {
+        @apply font-work-sans;
+    }
 }

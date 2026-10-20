@@ -4,8 +4,6 @@ import { IconCurrency } from "../icons";
 import { List } from "../List";
 import { ListItem } from "../ListItem";
 
-import styles from "./transactions.module.css";
-
 export const Transactions = () => {
   const items = [
     { description: "iFood", value: -20, date: "2024-10-01T00:00:00-03:00" },
@@ -35,7 +33,7 @@ export const Transactions = () => {
           </ListItem>
         ))}
       </List>
-      <div className={styles.actions}>
+      <div className="flex justify-center">
         <Button>
           <IconCurrency />
           Adicionar transação

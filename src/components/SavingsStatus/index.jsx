@@ -1,11 +1,10 @@
 import { IconSavings } from "../icons";
 import { ProgressBar } from "../ProgressBar";
-import styles from "./savingsstatus.module.css";
 
 export const SavingsStatus = ({ percent }) => {
   return (
-    <div className={styles.container}>
-      <p>
+    <div className="flex flex-col gap-10">
+      <p className="text-secondary-income font-bold flex items-center gap-2 justify-center text-xl leading-[125%]">
         <IconSavings /> Economizar
       </p>
       <ProgressBar percent={percent} />

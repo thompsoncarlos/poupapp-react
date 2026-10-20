@@ -1,26 +1,27 @@
 // src/components/Account/index.jsx
 import { IconBank } from "../icons";
-import styles from "./account.module.css";
 
-const formatter = new Intl.NumberFormat("pt-BR", {
+const formatter = new Intl.NumberFormat("pt-PT", {
   style: "currency",
-  currency: "BRL",
+  currency: "EUR",
 });
 
 export const Account = ({ account }) => {
   return (
-    <div className={styles.account}>
+    <div className="flex justify-between text-neutral-text">
       <div>
-        <p className={styles.bank}>
+        <p className="flex gap-2 items-center m-0 text-[15px] leading-[120%]">
           <IconBank />
           <strong>{account.bank}</strong>
         </p>
       </div>
-      <div className={styles.details}>
-        <p>
+      <div className="flex flex-col gap-2 w-[100px]">
+        <p className="m-0 text-[15px] leading-[120%]">
           <strong>Saldo</strong>
         </p>
-        <p>{formatter.format(account.balance)}</p>
+        <p className="m-0 text-[15px] leading-[120%]">
+          {formatter.format(account.balance)}
+        </p>
       </div>
     </div>
   );

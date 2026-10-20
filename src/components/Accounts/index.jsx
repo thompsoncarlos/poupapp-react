@@ -1,5 +1,4 @@
 // src/components/Accounts/index.jsx
-import styles from "./accounts.module.css";
 import { Button } from "../Button";
 import { Account } from "../Account";
 import { IconWallet } from "../icons";
@@ -14,7 +13,7 @@ export const Accounts = () => {
   ];
 
   return (
-    <div className={styles.accounts}>
+    <div className="flex flex-col h-full">
       <List>
         {accounts.map((ac) => (
           <ListItem key={ac.bank}>
@@ -22,8 +21,8 @@ export const Accounts = () => {
           </ListItem>
         ))}
       </List>
-      <div className={styles.divider} />
-      <div className={styles.actions}>
+      <div className="flex-grow" />
+      <div className="flex justify-center">
         <Button>
           <IconWallet /> Adicionar conta
         </Button>
